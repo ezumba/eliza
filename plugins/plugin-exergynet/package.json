@@ -1,0 +1,28 @@
+{
+  "name": "@elizaos/plugin-exergynet",
+  "version": "1.0.0-omega",
+  "description": "LNES-03 Unidirectional Membrane Compute Provider",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "agentConfig": {
+    "pluginType": "elizaos:plugin:1.0.0",
+    "pluginParameters": {}
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.0",
+    "bs58": "^5.0.0",
+    "tweetnacl": "^1.0.3"
+  },
+  "peerDependencies": {
+    "@elizaos/core": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3"
+  }
+}

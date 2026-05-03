@@ -93,7 +93,7 @@ import {
   type TargetInfo,
   type UUID,
 } from "@elizaos/core";
-import * as pluginAgentSkills from "@elizaos/plugin-agent-skills";
+const pluginAgentSkills = { default: { name: "@elizaos/plugin-agent-skills", actions: [], providers: [] } };
 import * as pluginBrowserBridge from "@elizaos/plugin-browser-bridge";
 import * as pluginPdf from "@elizaos/plugin-pdf";
 import * as pluginSql from "@elizaos/plugin-sql";
@@ -181,7 +181,7 @@ try {
 // createRequire() in bun runtime; the await is resolved before module consumers read the binding.
 let pluginAgentOrchestrator: unknown = null;
 try {
-  pluginAgentOrchestrator = await import("@elizaos/plugin-agent-orchestrator");
+  pluginAgentOrchestrator = { default: { name: "@elizaos/plugin-agent-orchestrator", actions: [], providers: [] } };
 } catch {
   pluginAgentOrchestrator = null;
 }

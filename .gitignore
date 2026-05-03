@@ -438,3 +438,9 @@ benchmark_results/
 # src/main/assets/agent/ at build time; committing the 33 MB bundle
 # blob and 5 MB pglite.data into the repo is wrong.
 packages/agent/dist-mobile/
+.env
+~/.config/solana/id.json
+packages/plugin-agent-skills/
+packages/plugin-agent-wallet/
+packages/plugin-agent-orchestrator/
+packages/capacitor-*/
